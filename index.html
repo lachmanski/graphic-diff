@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="about">
+  <h1>Graphic Diff (Coming Soon!)</h1>
+  <p>This tool highlights differences between similar graphics by compositing them with <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">difference blending mode</a>. It enables you to select two
+    local folders on your computer and compare documents between them. Graphic Diff is intended to compare different versions of the same document in order to verify changes made from one version to the next. It supports the formats BMP, GIF, JPG, PDF, PNG,
+    SVG, TIFF, and WebP. <a href="https://github.com/lachmanski/graphic-diff">Graphic Diff is on GitHub</a> and uses <a href="https://github.com/mozilla/pdf.js">PDF.js</a>, <a href="https://github.com/photopea/UTIF.js">UTIF.js</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">web workers</a>, and
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas">offscreen canvas</a>, which is an experimental technology currently enabled in Chrome. © 2019 <a href="https://github.com/lachmanski">A&nbsp;Lachmanski</a></p>
+  <p><button id="continue">Continue</button></p>
+</div>
+<div id="app">
+  <div id="menu">
+    <label><input id="colABrowse" class="browse" type="file" webkitdirectory directory multiple/><span class="button">Folder 1</span></label>
+    <label><input id="colBBrowse" class="browse" type="file" webkitdirectory directory multiple/><span class="button">Folder 2</span></label>
+    <label><input type="checkbox" id="subfolders"> Subfolders</label>
+    <button id="prev">&lt;</button>
+    <span id="current">15</span> / <span id="total">64</span>
+    <button id="next">&gt;</button>
+  </div>
+  <div id="artboard">
+    <canvas width=480 height=160></canvas>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

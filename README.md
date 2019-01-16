@@ -1,0 +1,5 @@
+# Graphic Diff (Coming Soon!)
+
+This tool highlights differences between similar graphics by compositing them with [difference blending mode](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation). It enables you to select two local folders on your computer and compare documents between them. Graphic Diff is intended to compare different versions of the same document in order to verify changes made from one version to the next. It supports the formats BMP, GIF, JPG, PDF, PNG, SVG, TIFF, and WebP. [Graphic Diff is on GitHub](https://github.com/lachmanski/graphic-diff) and uses [PDF.js](https://github.com/mozilla/pdf.js), [UTIF.js](https://github.com/photopea/UTIF.js), [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API), and [offscreen canvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas), which is an experimental technology currently enabled in Chrome. © 2019 [A Lachmanski](https://github.com/lachmanski)
+
+[Launch Web App](https://lachmanski.github.io/graphic-diff/)
